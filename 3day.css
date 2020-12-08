@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Mukta', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #ed7248;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 0;
+    transition: transform 0.5s linear;
+    transform-origin: top left;
+    background-color: #fff;
+    text-align: left;
+}
+h1 {
+    font-family: 'CaveatDodo' ,cursive;
+    text-align: left;
+}
+@media (max-width: 480px) {
+    h1 {
+        z-index: 2;
+        position: relative;
+    }
+}
+.container.show-nav{
+    transform: rotate(-25deg);
+}
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+.circle-container {
+    position: relative;
+    top: -150px;
+    left: -120px;
+}
+.circle {
+    background-color:#ed7248;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+.circle button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+.circle button:focus {
+    outline: none;
+}
+.circle button#open {
+    left: 50%;
+}
+.circle button#close {
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+.orange {
+    background-color: #ed7248;
+    margin-left: 15px;
+    margin-bottom: 0;
+    border-radius: 0  0 110% 60%;
+    height: 60px;
+    position: relative;
+}
+nav {
+    position: fixed;
+    top: 350px;
+    left: 0;
+    z-index: 100;
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+nav ul li {
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in;
+}
+nav ul li i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+.content {
+    max-width: 1000px;
+    margin-left: 60px;
+    padding: auto;
+    position: relative;
+    display: block;
+}
+@media (max-width: 480px) {
+    .content {
+        display: inline;
+        position: relative;
+    }
+}
+p {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #ed7248;
+    position: relative;
+}
+@media (max-width: 480px) {
+    p {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+#btn-dream {
+    border-radius: 100px;
+    background-color: #ed7248;
+    border-color: #ed7248;
+    height: 40px;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+#dream {
+    text-decoration: none;
+    color: #fff;
+}
+#letter {
+    margin-left: 40px;
+    max-width: 1000px;
+    padding: auto;
+    position: relative;
+    display: block;
+}
+#svg1 {
+    z-index: 1;
+    position: absolute;
+    margin-left: 40px;
+}
+#svg2 {
+    z-index: 1;
+    }
+#tree {
+    position: relative;
+    display: inline;
+    right: 0px;
+    top: 0px;
+}
+@media (min-width: 768px) {
+    #tree {
+        position: absolute;
+        display: inline;
+        right: 0px;
+        top: 0px;
+    }
+}
+.letter-sh {
+    display: block;
+    position: relative;
+    margin: 40px;
+   }
+.backgr {
+    background-color: rgb(240, 231, 231);
+    width: 340px;
+    height: 300px;
+    border-radius: 20%;
+    align-items: center;
+}
+@media (max-width: 480px) {
+    .backgr {
+        width: 220px;
+        background-color: #ed7248;
+    }
+}
+.letter-sh .message {
+    height: 200px;
+    width: 280px;
+}
+@media (max-width: 480px) {
+    .letter-sh .message {
+        width: 170px;
+    }
+}
+.letter-sh input, .letter-sh textarea {
+    font-family: "CaveatDodo", cursive;
+    color: #0c4b43;
+    border: none;
+}
+.letter-sh .city, .letter-sh .name {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0 .5em;
+    height: auto;
+    border-radius: 0;
+    position: relative;
+    width: 180px;
+}
+@media (max-width: 480px) {
+    .letter-sh .city, .letter-sh .name{
+        position: relative;
+        width: 160px;
+    }
+}
