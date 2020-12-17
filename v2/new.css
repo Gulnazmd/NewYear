@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'CaveatDodo' ,cursive;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
+}
+nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: #ed7248;
+    position: relative;
+    width: 100vw;
+  }
+.dog {
+    margin-top: 70px;
+    align-items: right;
+    justify-content: right;
+    transform: translateX(200%);
+    transition: transform 2.1s ease;
+}
+.dog.show {
+    transform: translateX(0);
+    z-index: -1;
+}
+.content {
+    margin-left: 150px;
+    position: relative;
+    display: block;
+    margin-bottom: 90px;
+    margin-top: 70px;
+}
+#btn-dream {
+    border-radius: 100px;
+    background-color: #ed7248;
+    border-color: #ed7248;
+    height: 50px;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+#dream {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: 'CaveatDodo' ,cursive;
+}
+ul li {
+    display: list-item;
+    margin-left: 20px;
+}
+#svg11 {
+    z-index: -2;
+    position: absolute;
+    margin-left: 190px;
+    transform: rotate(-180deg);
+}
+#svg3 {
+    position: relative;
+}
+#svg1 {
+    z-index: -1;
+    position: absolute;
+}
+#tree {
+    position: absolute;
+    display: inline;
+    top: 0px;
+    right: 13%;
+}
+#yourLetter {
+    margin-left: 150px;
+    position: relative;
+    display: block;
+}
+.feedback {
+    width: 260px;
+    height: 350px;
+    background-color: #ed7248;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#receiver {
+    width: 190px;
+    height: 230px;
+    background-color: #ffffff;
+    border-radius: 0 20% 0 20%;
+}
+.btn-dreamsCome {
+    border-radius: 100px;
+    background-color: #ed7248;
+    border-color: #ed7248;
+    height: 40px;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    color: white;
+    position: relative;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.quotes {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.quotes1 {
+    background-color:#ed7248;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+    display: flex;
+    flex-direction:row;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    position: relative;
+    transform: translateY(-100%) rotate(-70deg);
+    transition: transform 2.1s ease;
+    z-index: -1;
+}
+#first.show-first {
+    transform: translateY(0);
+}
+#second.show-second {
+    transform: translateY(0);
+}
+#third.show-third {
+    transform: translateY(0);
+}
+#fourth.show-fourth {
+    transform: translateY(0);
+}
+.quotes1 h5 {
+    margin: 15px;
+}
+#letter {
+    margin-left: 150px;
+    position: relative;
+    display: block;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+.letter-sh {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 40px;
+   }
+.backgr {
+    background-color: rgb(240, 231, 231);
+    width: 260px;
+    height: 350px;
+    border-radius: 20%;
+    align-items: center;
+    right: 13%;
+    display: inline;
+    position: absolute;
+    top: 0;
+}
+.letter-sh .message {
+    width: 190px;
+    height: 230px;
+    border-radius: 0 20% 0 20%;
+    margin-top:30px;
+}
+.letter-sh input, .letter-sh textarea {
+    font-family: "CaveatDodo", cursive;
+    color: #0c4b43;
+    border: none;
+}
+.letter-sh .city, .letter-sh .name {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0 .5em;
+    height: auto;
+    border-radius: 0;
+    position: relative;
+    width: 180px;
+    margin-top:10px;
+}
+#btn-fly {
+    border-radius: 100px;
+    background-color: #ed7248;
+    border-color: #ed7248;
+    height: 40px;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    margin-left: 90px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+#myDream {
+    text-decoration: none;
+    color: #fff;
+}
+.footer {
+    text-align: center;
+    font-size: small;
+    margin-top: 70px;
+  }
+  @media (max-width: 768px) {
+    #tree {
+        position: relative;
+        display: block;
+        top: 0px;
+        margin-left: 20px;
+    }
+    .backgr {
+        position: relative;
+        display: block;
+        align-items: center;
+        background-color: rgb(240, 231, 231);
+        margin-left: 40px;
+    }
+    .dog {
+        transform: translateY(100%);
+        transition: transform 0.9s ease;
+    }
+    #yourLetter {
+       position: relative;
+       display: block;
+       margin-left: 40px;
+       }
+    .content {
+       margin-left: 40px;
+       position: relative;
+       display: block;
+       margin-bottom: 90px;
+       margin-top: 70px;
+       }
+    #letter {
+       margin: auto ;
+       position: relative;
+       display: block;
+       margin-bottom: 90px;
+       margin-top: 70px;
+}
+    .quotes1 {
+        background-color:#ed7248;
+        height: 70px;
+        width: 150px;
+        border-radius: 20%;
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+        position: relative;
+        transform: translateY(-490%) rotate(-70deg);
+        transition: transform 1.6s ease;
+        z-index: -1;
+        margin:2px;
+}
+    .quotes {
+        margin-left: 110px;
+        display: flex;
+        flex-direction:column;
+}
+    ul li {
+        margin-left:15px;
+}
+}

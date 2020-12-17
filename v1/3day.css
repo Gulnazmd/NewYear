@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 
-* {
-    box-sizing: border-box;
-}
 body {
     font-family: 'Mukta', sans-serif;
     overflow-x: hidden;
     margin: 0;
     background-color: #ed7248;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container {
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
-    height: 100%;
+    min-height: 100vh;
     padding-left: 50px;
     padding-top: 0;
     transition: transform 0.5s linear;
@@ -24,12 +24,6 @@ body {
 h1 {
     font-family: 'CaveatDodo' ,cursive;
     text-align: left;
-}
-@media (max-width: 480px) {
-    h1 {
-        z-index: 2;
-        position: relative;
-    }
 }
 .container.show-nav{
     transform: rotate(-25deg);
@@ -114,32 +108,17 @@ nav ul li + li + li {
     transform: translateX(-200%);
 }
 .content {
-    max-width: 1000px;
     margin-left: 60px;
     padding: auto;
     position: relative;
     display: block;
 }
-@media (max-width: 480px) {
-    .content {
-        display: inline;
-        position: relative;
-    }
-}
-p {
+ p {
     display: block;
     margin-top: 40px;
     margin-bottom: 40px;
-    color: #ed7248;
     position: relative;
-}
-@media (max-width: 480px) {
-    p {
-        position: relative;
-        z-index: 2;
-    }
-}
-
+} 
 #btn-dream {
     border-radius: 100px;
     background-color: #ed7248;
@@ -150,6 +129,7 @@ p {
     padding: .375rem .75rem;
     margin-top: 30px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 #dream {
     text-decoration: none;
@@ -157,7 +137,6 @@ p {
 }
 #letter {
     margin-left: 40px;
-    max-width: 1000px;
     padding: auto;
     position: relative;
     display: block;
@@ -173,16 +152,8 @@ p {
 #tree {
     position: relative;
     display: inline;
-    right: 0px;
     top: 0px;
-}
-@media (min-width: 768px) {
-    #tree {
-        position: absolute;
-        display: inline;
-        right: 0px;
-        top: 0px;
-    }
+    right: 20%;
 }
 .letter-sh {
     display: block;
@@ -191,25 +162,19 @@ p {
    }
 .backgr {
     background-color: rgb(240, 231, 231);
-    width: 340px;
-    height: 300px;
+    width: 260px;
+    height: 350px;
     border-radius: 20%;
     align-items: center;
-}
-@media (max-width: 480px) {
-    .backgr {
-        width: 220px;
-        background-color: #ed7248;
-    }
+    right: 13%;
+    display: inline;
+    position: relative;
+    top: 0;
 }
 .letter-sh .message {
-    height: 200px;
-    width: 280px;
-}
-@media (max-width: 480px) {
-    .letter-sh .message {
-        width: 170px;
-    }
+    width: 190px;
+    height: 230px;
+    border-radius: 0 20% 0 20%;
 }
 .letter-sh input, .letter-sh textarea {
     font-family: "CaveatDodo", cursive;
@@ -224,9 +189,95 @@ p {
     position: relative;
     width: 180px;
 }
+.btn-dreamsCome {
+    border-radius: 100px;
+    background-color: #ed7248;
+    border-color: #ed7248;
+    height: 40px;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    color: white;
+    position: relative;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#btn-fly {
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #ed7248;
+    border-color: #ed7248;
+    height: 40px;
+    border: 2px solid transparent;
+    text-align: center;
+    padding: .375rem .75rem;
+    margin-left: 90px;
+    color: white;
+    position: relative;
+    margin-top: .95rem;
+}
+#yourLetter {
+    margin-left: 40px;
+    margin-top: 90px;
+    padding: auto;
+    display: block;
+    position: relative;
+}
+.feedback {
+    width: 260px;
+    height: 350px;
+    background-color: #ed7248;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#receiver {
+    width: 190px;
+    height: 230px;
+    background-color: #ffffff;
+    border-radius: 0 20% 0 20%;
+}
+.footer {
+    text-align: center;
+    font-size: small;
+    margin-top: 70px;
+  }
+@media (min-width: 768px) {
+    #tree {
+        position: absolute;
+        display: inline;
+        top: 0px;
+
+    }
+    .backgr {
+        position: absolute;
+        display: inline;
+        align-items: center;
+        margin-left: 70px;
+        background-color: rgb(240, 231, 231);
+    }
+}
 @media (max-width: 480px) {
+    .letter-sh .message {
+        width: 170px;
+    }
     .letter-sh .city, .letter-sh .name{
         position: relative;
         width: 160px;
+    }
+    p {
+        position: relative;
+        z-index: 2;
+    }
+    h1 {
+        z-index: 2;
+        position: relative;
+    }
+    .backgr {
+        position: relative;
+        display: block;
+        width: 280px;
+        background-color: rgb(240, 231, 231);
     }
 }
